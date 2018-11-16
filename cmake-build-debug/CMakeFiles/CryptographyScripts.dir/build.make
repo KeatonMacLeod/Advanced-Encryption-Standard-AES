@@ -108,12 +108,96 @@ CMakeFiles/CryptographyScripts.dir/utility.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptographyScripts.dir/utility.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jeeves\C++Projects\CryptographyScripts\utility.cpp -o CMakeFiles\CryptographyScripts.dir\utility.cpp.s
 
+CMakeFiles/CryptographyScripts.dir/plaintext.cpp.obj: CMakeFiles/CryptographyScripts.dir/flags.make
+CMakeFiles/CryptographyScripts.dir/plaintext.cpp.obj: ../plaintext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CryptographyScripts.dir/plaintext.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CryptographyScripts.dir\plaintext.cpp.obj -c C:\Users\Jeeves\C++Projects\CryptographyScripts\plaintext.cpp
+
+CMakeFiles/CryptographyScripts.dir/plaintext.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptographyScripts.dir/plaintext.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Jeeves\C++Projects\CryptographyScripts\plaintext.cpp > CMakeFiles\CryptographyScripts.dir\plaintext.cpp.i
+
+CMakeFiles/CryptographyScripts.dir/plaintext.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptographyScripts.dir/plaintext.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jeeves\C++Projects\CryptographyScripts\plaintext.cpp -o CMakeFiles\CryptographyScripts.dir\plaintext.cpp.s
+
+CMakeFiles/CryptographyScripts.dir/key.cpp.obj: CMakeFiles/CryptographyScripts.dir/flags.make
+CMakeFiles/CryptographyScripts.dir/key.cpp.obj: ../key.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CryptographyScripts.dir/key.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CryptographyScripts.dir\key.cpp.obj -c C:\Users\Jeeves\C++Projects\CryptographyScripts\key.cpp
+
+CMakeFiles/CryptographyScripts.dir/key.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptographyScripts.dir/key.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Jeeves\C++Projects\CryptographyScripts\key.cpp > CMakeFiles\CryptographyScripts.dir\key.cpp.i
+
+CMakeFiles/CryptographyScripts.dir/key.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptographyScripts.dir/key.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jeeves\C++Projects\CryptographyScripts\key.cpp -o CMakeFiles\CryptographyScripts.dir\key.cpp.s
+
+CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: CMakeFiles/CryptographyScripts.dir/flags.make
+CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../aes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CryptographyScripts.dir/aes.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CryptographyScripts.dir\aes.cpp.obj -c C:\Users\Jeeves\C++Projects\CryptographyScripts\aes.cpp
+
+CMakeFiles/CryptographyScripts.dir/aes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptographyScripts.dir/aes.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Jeeves\C++Projects\CryptographyScripts\aes.cpp > CMakeFiles\CryptographyScripts.dir\aes.cpp.i
+
+CMakeFiles/CryptographyScripts.dir/aes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptographyScripts.dir/aes.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jeeves\C++Projects\CryptographyScripts\aes.cpp -o CMakeFiles\CryptographyScripts.dir\aes.cpp.s
+
+CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj: CMakeFiles/CryptographyScripts.dir/flags.make
+CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj: ../cipher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CryptographyScripts.dir\cipher.cpp.obj -c C:\Users\Jeeves\C++Projects\CryptographyScripts\cipher.cpp
+
+CMakeFiles/CryptographyScripts.dir/cipher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptographyScripts.dir/cipher.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Jeeves\C++Projects\CryptographyScripts\cipher.cpp > CMakeFiles\CryptographyScripts.dir\cipher.cpp.i
+
+CMakeFiles/CryptographyScripts.dir/cipher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptographyScripts.dir/cipher.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jeeves\C++Projects\CryptographyScripts\cipher.cpp -o CMakeFiles\CryptographyScripts.dir\cipher.cpp.s
+
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: CMakeFiles/CryptographyScripts.dir/flags.make
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: ../cipher_inverse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CryptographyScripts.dir\cipher_inverse.cpp.obj -c C:\Users\Jeeves\C++Projects\CryptographyScripts\cipher_inverse.cpp
+
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Jeeves\C++Projects\CryptographyScripts\cipher_inverse.cpp > CMakeFiles\CryptographyScripts.dir\cipher_inverse.cpp.i
+
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jeeves\C++Projects\CryptographyScripts\cipher_inverse.cpp -o CMakeFiles\CryptographyScripts.dir\cipher_inverse.cpp.s
+
+CMakeFiles/CryptographyScripts.dir/state.cpp.obj: CMakeFiles/CryptographyScripts.dir/flags.make
+CMakeFiles/CryptographyScripts.dir/state.cpp.obj: ../state.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CryptographyScripts.dir/state.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CryptographyScripts.dir\state.cpp.obj -c C:\Users\Jeeves\C++Projects\CryptographyScripts\state.cpp
+
+CMakeFiles/CryptographyScripts.dir/state.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptographyScripts.dir/state.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Jeeves\C++Projects\CryptographyScripts\state.cpp > CMakeFiles\CryptographyScripts.dir\state.cpp.i
+
+CMakeFiles/CryptographyScripts.dir/state.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptographyScripts.dir/state.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Jeeves\C++Projects\CryptographyScripts\state.cpp -o CMakeFiles\CryptographyScripts.dir\state.cpp.s
+
 # Object files for target CryptographyScripts
 CryptographyScripts_OBJECTS = \
 "CMakeFiles/CryptographyScripts.dir/main.cpp.obj" \
 "CMakeFiles/CryptographyScripts.dir/s_box.cpp.obj" \
 "CMakeFiles/CryptographyScripts.dir/s_box_inverse.cpp.obj" \
-"CMakeFiles/CryptographyScripts.dir/utility.cpp.obj"
+"CMakeFiles/CryptographyScripts.dir/utility.cpp.obj" \
+"CMakeFiles/CryptographyScripts.dir/plaintext.cpp.obj" \
+"CMakeFiles/CryptographyScripts.dir/key.cpp.obj" \
+"CMakeFiles/CryptographyScripts.dir/aes.cpp.obj" \
+"CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj" \
+"CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj" \
+"CMakeFiles/CryptographyScripts.dir/state.cpp.obj"
 
 # External object files for target CryptographyScripts
 CryptographyScripts_EXTERNAL_OBJECTS =
@@ -122,11 +206,17 @@ CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/main.cpp.obj
 CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/s_box.cpp.obj
 CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/s_box_inverse.cpp.obj
 CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/utility.cpp.obj
+CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/plaintext.cpp.obj
+CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/key.cpp.obj
+CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/aes.cpp.obj
+CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj
+CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj
+CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/state.cpp.obj
 CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/build.make
 CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/linklibs.rsp
 CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/objects1.rsp
 CryptographyScripts.exe: CMakeFiles/CryptographyScripts.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable CryptographyScripts.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Jeeves\C++Projects\CryptographyScripts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable CryptographyScripts.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CryptographyScripts.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

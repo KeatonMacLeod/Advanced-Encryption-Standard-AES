@@ -122,6 +122,114 @@ CryptographyScripts/fast:
 	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/build
 .PHONY : CryptographyScripts/fast
 
+aes.obj: aes.cpp.obj
+
+.PHONY : aes.obj
+
+# target to build an object file
+aes.cpp.obj:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/aes.cpp.obj
+.PHONY : aes.cpp.obj
+
+aes.i: aes.cpp.i
+
+.PHONY : aes.i
+
+# target to preprocess a source file
+aes.cpp.i:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/aes.cpp.i
+.PHONY : aes.cpp.i
+
+aes.s: aes.cpp.s
+
+.PHONY : aes.s
+
+# target to generate assembly for a file
+aes.cpp.s:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/aes.cpp.s
+.PHONY : aes.cpp.s
+
+cipher.obj: cipher.cpp.obj
+
+.PHONY : cipher.obj
+
+# target to build an object file
+cipher.cpp.obj:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj
+.PHONY : cipher.cpp.obj
+
+cipher.i: cipher.cpp.i
+
+.PHONY : cipher.i
+
+# target to preprocess a source file
+cipher.cpp.i:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/cipher.cpp.i
+.PHONY : cipher.cpp.i
+
+cipher.s: cipher.cpp.s
+
+.PHONY : cipher.s
+
+# target to generate assembly for a file
+cipher.cpp.s:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/cipher.cpp.s
+.PHONY : cipher.cpp.s
+
+cipher_inverse.obj: cipher_inverse.cpp.obj
+
+.PHONY : cipher_inverse.obj
+
+# target to build an object file
+cipher_inverse.cpp.obj:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj
+.PHONY : cipher_inverse.cpp.obj
+
+cipher_inverse.i: cipher_inverse.cpp.i
+
+.PHONY : cipher_inverse.i
+
+# target to preprocess a source file
+cipher_inverse.cpp.i:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.i
+.PHONY : cipher_inverse.cpp.i
+
+cipher_inverse.s: cipher_inverse.cpp.s
+
+.PHONY : cipher_inverse.s
+
+# target to generate assembly for a file
+cipher_inverse.cpp.s:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.s
+.PHONY : cipher_inverse.cpp.s
+
+key.obj: key.cpp.obj
+
+.PHONY : key.obj
+
+# target to build an object file
+key.cpp.obj:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/key.cpp.obj
+.PHONY : key.cpp.obj
+
+key.i: key.cpp.i
+
+.PHONY : key.i
+
+# target to preprocess a source file
+key.cpp.i:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/key.cpp.i
+.PHONY : key.cpp.i
+
+key.s: key.cpp.s
+
+.PHONY : key.s
+
+# target to generate assembly for a file
+key.cpp.s:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/key.cpp.s
+.PHONY : key.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -148,6 +256,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+plaintext.obj: plaintext.cpp.obj
+
+.PHONY : plaintext.obj
+
+# target to build an object file
+plaintext.cpp.obj:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/plaintext.cpp.obj
+.PHONY : plaintext.cpp.obj
+
+plaintext.i: plaintext.cpp.i
+
+.PHONY : plaintext.i
+
+# target to preprocess a source file
+plaintext.cpp.i:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/plaintext.cpp.i
+.PHONY : plaintext.cpp.i
+
+plaintext.s: plaintext.cpp.s
+
+.PHONY : plaintext.s
+
+# target to generate assembly for a file
+plaintext.cpp.s:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/plaintext.cpp.s
+.PHONY : plaintext.cpp.s
 
 s_box.obj: s_box.cpp.obj
 
@@ -203,6 +338,33 @@ s_box_inverse.cpp.s:
 	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/s_box_inverse.cpp.s
 .PHONY : s_box_inverse.cpp.s
 
+state.obj: state.cpp.obj
+
+.PHONY : state.obj
+
+# target to build an object file
+state.cpp.obj:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/state.cpp.obj
+.PHONY : state.cpp.obj
+
+state.i: state.cpp.i
+
+.PHONY : state.i
+
+# target to preprocess a source file
+state.cpp.i:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/state.cpp.i
+.PHONY : state.cpp.i
+
+state.s: state.cpp.s
+
+.PHONY : state.s
+
+# target to generate assembly for a file
+state.cpp.s:
+	$(MAKE) -f CMakeFiles\CryptographyScripts.dir\build.make CMakeFiles/CryptographyScripts.dir/state.cpp.s
+.PHONY : state.cpp.s
+
 utility.obj: utility.cpp.obj
 
 .PHONY : utility.obj
@@ -239,15 +401,33 @@ help:
 	@echo ... CryptographyScripts
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... aes.obj
+	@echo ... aes.i
+	@echo ... aes.s
+	@echo ... cipher.obj
+	@echo ... cipher.i
+	@echo ... cipher.s
+	@echo ... cipher_inverse.obj
+	@echo ... cipher_inverse.i
+	@echo ... cipher_inverse.s
+	@echo ... key.obj
+	@echo ... key.i
+	@echo ... key.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... plaintext.obj
+	@echo ... plaintext.i
+	@echo ... plaintext.s
 	@echo ... s_box.obj
 	@echo ... s_box.i
 	@echo ... s_box.s
 	@echo ... s_box_inverse.obj
 	@echo ... s_box_inverse.i
 	@echo ... s_box_inverse.s
+	@echo ... state.obj
+	@echo ... state.i
+	@echo ... state.s
 	@echo ... utility.obj
 	@echo ... utility.i
 	@echo ... utility.s

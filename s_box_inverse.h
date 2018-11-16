@@ -3,12 +3,15 @@
 
 #include <fstream>
 #include <iostream>
+#include "utility.h"
 
 using namespace std;
 
 class SBoxInverse {
 public:
-    uint8_t substitutionTable[15][15];
+    Utility* utility;
+    uint8_t substitutionTable[16][16];
+    SBoxInverse();
     void initializeSBox();
 };
 
