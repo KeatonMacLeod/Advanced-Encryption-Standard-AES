@@ -1,7 +1,8 @@
 #include <vector>
+#include <iostream>
 #include "utility.h"
 
-uint8_t Utility::hex_char_to_binary(char c)
+uint8_t Utility::hexCharToBinary(char c)
 {
     switch(toupper(c))
     {
@@ -25,10 +26,10 @@ uint8_t Utility::hex_char_to_binary(char c)
 }
 
 //THIS NEEDS to return the unsigned char that can be OR'd and AND'd in the S-box
-uint8_t Utility::hex_string_to_byte(const string& hexa)
+uint8_t Utility::hexStringToByte(const string& hexa)
 {
-    uint8_t first_four_bits = hex_char_to_binary(hexa[0]);
-    uint8_t last_four_bits = hex_char_to_binary(hexa[1]);
+    uint8_t first_four_bits = hexCharToBinary(hexa[0]);
+    uint8_t last_four_bits = hexCharToBinary(hexa[1]);
     uint8_t byte = 0x00;
 
     byte = first_four_bits;
@@ -36,4 +37,10 @@ uint8_t Utility::hex_string_to_byte(const string& hexa)
     byte |= last_four_bits;
 
     return byte;
+}
+
+void Utility::clearArray(uint8_t* matrix[], const int& rows, const int& cols) {
+    for (int i=0; i< rows*cols; i++) {
+        cout << (*matrix)[i] << endl;
+    }
 }

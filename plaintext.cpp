@@ -13,7 +13,7 @@ void Plaintext::process_plaintext_filename(char* filename) {
             int col = 0;
             istringstream token_stream(line);
             for(string s; token_stream >> s;)
-                plaintext_bytes[col++] = utility->hex_string_to_byte(s);
+                plaintext_bytes[col++] = utility->hexStringToByte(s);
         }
         plaintext_file.close();
     }

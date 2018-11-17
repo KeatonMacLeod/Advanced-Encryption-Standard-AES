@@ -16,14 +16,6 @@ int main(int argc, char** argv) {
     auto key = new Key();
     key->process_key_filename(argv[2]);
 
-    //Initialize regular S-Box
-    auto s_box = new SBox();
-    s_box->initializeSBox();
-
-    //Initialize inverse S-Box
-    auto s_box_inverse = new SBoxInverse();
-    s_box_inverse->initializeSBox();
-
     //Initialize the encryption scheme
     auto aes = new AES();
 

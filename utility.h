@@ -7,8 +7,9 @@ using namespace std;
 
 class Utility {
 public:
-    uint8_t hex_char_to_binary(char c);
-    uint8_t hex_string_to_byte(const std::string& hex);
+    uint8_t hexCharToBinary(char c);
+    uint8_t hexStringToByte(const std::string& hex);
+    void clearArray(uint8_t* matrix[], const int& rows, const int& cols);
 };
 
 #endif //CRYPTOGRAPHYSCRIPTS_UTILITY_H

@@ -7,7 +7,10 @@ CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../cipher.h
 CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../cipher_inverse.h
 CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../key.h
 CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../plaintext.h
+CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../s_box.h
+CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../s_box_inverse.h
 CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../state.h
+CMakeFiles/CryptographyScripts.dir/aes.cpp.obj: ../utility.h
 
 CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj: ../cipher.cpp
 CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj: ../cipher.h

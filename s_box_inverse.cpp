@@ -17,10 +17,14 @@ void SBoxInverse::initializeSBox() {
             int col = 0;
             istringstream token_stream(line);
             for(string s; token_stream >> s;)
-                substitutionTable[row][col++] = utility->hex_string_to_byte(s);
+                substitutionTable[row][col++] = utility->hexStringToByte(s);
 
             row++;
         }
         s_box_file.close();
     }
+}
+
+uint8_t SBoxInverse::lookup(uint8_t byte) {
+
 }
