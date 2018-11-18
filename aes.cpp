@@ -69,8 +69,9 @@ void AES::decrypt() {
 
     cipher_inverse->invShiftRows(state);
     cipher_inverse->invSubBytes(state, s_box_inverse);
-    cipher_inverse->addRoundKey(state, key_schedule, 0);
     displayDecryptionRound(0);
+    cipher_inverse->addRoundKey(state, key_schedule, 0);
+    displayDecryptionRound(-1);
 }
 
 //CONFIRMED WORKING PROPERLY
@@ -213,7 +214,7 @@ void AES::displayDecryptionProcess() {
 }
 
 void AES::displayDecryptionRound(int round) {
-    if (round == 0)
+    if (round == -1)
         cout << "Plaintext:" << endl << "----------" << endl;
     else if (round == 10)
         cout << "Ciphertext:" << endl << "-----------" << endl;
