@@ -29,6 +29,12 @@ public:
     void generateKeySchedule(Key* key);
     uint8_t* subWord(uint8_t word[4]);
     uint8_t* rotWord(uint8_t word[4]);
+
+    //Simple display functions
+    void displayKeySchedule();
+    void displayEncryptionProcess();
+    void displayPlaintext(Plaintext* plaintext);
+    void displayEncryptionRound(int round);
 };
 
 

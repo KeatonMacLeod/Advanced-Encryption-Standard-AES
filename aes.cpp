@@ -24,8 +24,15 @@ void AES::encrypt(Plaintext* plaintext, Key* key) {
     //Stored in AES' key_schedule variable
     generateKeySchedule(key);
 
+    //Display results to console
+    displayKeySchedule();
+    displayEncryptionProcess();
+    displayPlaintext(plaintext);
+
     //Initial AddRoundKey
     cipher->addRoundKey(state, key_schedule, 0);
+
+    displayEncryptionRound(1);
 
     //Begin the encryption rounds
     for (int round = 1; round < Nr; round++) {
@@ -33,11 +40,13 @@ void AES::encrypt(Plaintext* plaintext, Key* key) {
         cipher->shiftRows(state);
         cipher->mixColumns(state);
         cipher->addRoundKey(state, key_schedule, round*Nb);
+        displayEncryptionRound(round+1);
     }
 
     cipher->subBytes(state, s_box);
     cipher->shiftRows(state);
     cipher->addRoundKey(state, key_schedule, 40);
+    displayEncryptionRound(11);
 }
 
 //Figure 12 in Section 5.3
@@ -133,3 +142,62 @@ uint8_t* AES::rotWord(uint8_t word[4]) {
     word[3] = temp;
     return word;
 }
+
+/********************************
+ * SIMPLE DISPLAY FUNCTIONALITY *
+ ********************************/
+
+void AES::displayKeySchedule() {
+    cout << endl << "Key Schedule:" << endl;
+    int keys_on_line = 1;
+    for (int i=0; i<44; i++) {
+        for (int j=0; j<4; j++) {
+            cout << hex << static_cast<int>(key_schedule[i][j]);
+        }
+        if (keys_on_line % 4 == 0)
+            cout << endl;
+        else
+            cout << ",";
+        keys_on_line++;
+    }
+}
+
+void AES::displayEncryptionProcess() {
+    cout << endl << "ENCRYPTION PROCESS" << endl << "------------------" << endl;
+}
+
+void AES::displayPlaintext(Plaintext* plaintext) {
+    cout << "Plain Text:" << endl;
+    int plain_text_on_line = 1;
+    for (int i=0; i<16; i++) {
+        if (plain_text_on_line % 4 == 0)
+            cout << hex << static_cast<int>(plaintext->plaintext_bytes[i]) << "\t";
+        else
+            cout << hex << static_cast<int>(plaintext->plaintext_bytes[i]) << " ";
+
+        plain_text_on_line++;
+    }
+    cout << endl << endl;
+}
+
+void AES::displayEncryptionRound(int round) {
+    if (round == 10)
+        cout << "Last Round:" << endl << "-----------" << endl;
+    else if (round == 11)
+        cout << "Ciphertext:" << endl << "-----------" << endl;
+    else
+        cout << "Round " << round << ":" << endl << "--------" << endl;
+    int cipher_text_on_lines = 1;
+    for (int i=0; i<4; i++) {
+        for (int j=0; j<4; j++) {
+            if (cipher_text_on_lines % 4 == 0)
+                cout << hex << static_cast<int>(state->state[j][i]) << "\t";
+            else
+                cout << hex << static_cast<int>(state->state[j][i]) << " ";
+
+            cipher_text_on_lines++;
+        }
+    }
+    cout << endl << endl;
+}
+

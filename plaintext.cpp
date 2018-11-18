@@ -6,6 +6,7 @@ void Plaintext::process_plaintext_filename(char* filename) {
     auto utility = new Utility();
     string line;
     ifstream plaintext_file;
+    cout << endl << "PlainText Filename: " << filename << endl;
     plaintext_file.open(filename);
     int row = 0;
     if (plaintext_file.is_open()) {
