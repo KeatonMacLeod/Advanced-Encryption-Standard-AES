@@ -30,11 +30,13 @@ public:
     uint8_t* subWord(uint8_t word[4]);
     uint8_t* rotWord(uint8_t word[4]);
 
-    //Simple display functions
+    // Display functions
     void displayKeySchedule();
     void displayEncryptionProcess();
     void displayPlaintext(Plaintext* plaintext);
     void displayEncryptionRound(int round);
+    void displayDecryptionProcess();
+    void displayDecryptionRound(int round);
 };
 
 
