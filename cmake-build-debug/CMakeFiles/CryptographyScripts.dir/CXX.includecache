@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 C:/Users/Jeeves/C++Projects/CryptographyScripts/aes.cpp
+cmath
+-
 aes.h
 C:/Users/Jeeves/C++Projects/CryptographyScripts/aes.h
 
@@ -35,6 +37,18 @@ fstream
 -
 iostream
 -
+
+C:/Users/Jeeves/C++Projects/CryptographyScripts/main.cpp
+plaintext.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/plaintext.h
+key.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/key.h
+s_box.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/s_box.h
+s_box_inverse.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/s_box_inverse.h
+aes.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/aes.h
 
 C:/Users/Jeeves/C++Projects/CryptographyScripts/plaintext.h
 fstream

@@ -9,7 +9,7 @@ class Utility {
 public:
     uint8_t hexCharToBinary(char c);
     uint8_t hexStringToByte(const std::string& hex);
-    void clearArray(uint8_t* matrix[], const int& rows, const int& cols);
+    uint8_t galoisMultiply(uint8_t byte);
 };
 
 #endif //CRYPTOGRAPHYSCRIPTS_UTILITY_H

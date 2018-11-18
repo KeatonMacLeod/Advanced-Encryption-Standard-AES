@@ -25,7 +25,6 @@ uint8_t Utility::hexCharToBinary(char c)
     }
 }
 
-//THIS NEEDS to return the unsigned char that can be OR'd and AND'd in the S-box
 uint8_t Utility::hexStringToByte(const string& hexa)
 {
     uint8_t first_four_bits = hexCharToBinary(hexa[0]);
@@ -39,8 +38,13 @@ uint8_t Utility::hexStringToByte(const string& hexa)
     return byte;
 }
 
-void Utility::clearArray(uint8_t* matrix[], const int& rows, const int& cols) {
-    for (int i=0; i< rows*cols; i++) {
-        cout << (*matrix)[i] << endl;
+// Computes byte * 2 and performs necessary modulo calculations if
+// an overflow took place
+uint8_t Utility::galoisMultiply(uint8_t byte) {
+    uint8_t hi_bit = byte >> 7;
+    byte = byte << 1;
+    if (hi_bit == 1) {
+        byte ^= 0x11b;
     }
+    return byte;
 }

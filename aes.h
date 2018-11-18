@@ -21,7 +21,7 @@ public:
     CipherInverse* cipher_inverse;
     SBox* s_box;
     SBoxInverse* s_box_inverse;
-    uint8_t key_schedule[Nb][Nr+1];
+    uint8_t key_schedule[Nb*(Nr+1)][Nk];
 
     AES();
     void encrypt(Plaintext* plaintext, Key* key);
