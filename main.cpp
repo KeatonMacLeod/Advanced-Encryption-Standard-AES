@@ -19,8 +19,10 @@ int main(int argc, char** argv) {
     //Initialize the encryption scheme
     auto aes = new AES();
 
-    //Encrypt the plaintext
+    //Encrypt the plaintext and print out the encryption process
     aes->encrypt(plaintext, key);
 
+    //Decrypt the cipher text and print out the decryption process
+    aes->decrypt();
     return 0;
 }

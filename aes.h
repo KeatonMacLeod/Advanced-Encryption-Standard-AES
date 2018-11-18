@@ -25,6 +25,7 @@ public:
 
     AES();
     void encrypt(Plaintext* plaintext, Key* key);
+    void decrypt();
     void generateKeySchedule(Key* key);
     uint8_t* subWord(uint8_t word[4]);
     uint8_t* rotWord(uint8_t word[4]);

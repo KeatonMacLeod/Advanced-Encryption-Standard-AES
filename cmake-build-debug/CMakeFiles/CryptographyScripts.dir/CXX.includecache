@@ -35,6 +35,12 @@ s_box.h
 C:/Users/Jeeves/C++Projects/CryptographyScripts/s_box.h
 
 C:/Users/Jeeves/C++Projects/CryptographyScripts/cipher_inverse.h
+state.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/state.h
+utility.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/utility.h
+s_box_inverse.h
+C:/Users/Jeeves/C++Projects/CryptographyScripts/s_box_inverse.h
 
 C:/Users/Jeeves/C++Projects/CryptographyScripts/key.h
 fstream

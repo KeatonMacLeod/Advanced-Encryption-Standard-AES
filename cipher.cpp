@@ -34,6 +34,7 @@ void Cipher::shiftRows(State* state) {
     }
 }
 
+//CONFIRMED WORKING PROPERLY
 void Cipher::mixColumns(State* state) {
 
     uint8_t temp[4][4];

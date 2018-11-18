@@ -40,6 +40,19 @@ void AES::encrypt(Plaintext* plaintext, Key* key) {
     cipher->addRoundKey(state, key_schedule, 40);
 }
 
+//Figure 12 in Section 5.3
+void AES::decrypt() {
+    //Initial AddRoundKey
+    cipher_inverse ->addRoundKey(state, key_schedule, 40);
+
+    for (int round = Nr-1; round > 0; round--) {
+        cipher_inverse->invShiftRows(state);
+        cipher_inverse->invSubBytes(state, s_box_inverse);
+        cipher_inverse->addRoundKey(state, key_schedule, round*Nb);
+        int x = 2+2;
+    }
+}
+
 //CONFIRMED WORKING PROPERLY
 //Figure 11 in Section 5.2 Key Expansion
 void AES::generateKeySchedule(Key *key) {

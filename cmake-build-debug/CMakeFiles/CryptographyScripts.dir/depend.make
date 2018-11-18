@@ -21,6 +21,10 @@ CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj: ../utility.h
 
 CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: ../cipher_inverse.cpp
 CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: ../cipher_inverse.h
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: ../plaintext.h
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: ../s_box_inverse.h
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: ../state.h
+CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj: ../utility.h
 
 CMakeFiles/CryptographyScripts.dir/key.cpp.obj: ../key.cpp
 CMakeFiles/CryptographyScripts.dir/key.cpp.obj: ../key.h
