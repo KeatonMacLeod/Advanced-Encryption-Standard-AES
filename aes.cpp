@@ -30,6 +30,7 @@ void AES::encrypt(Plaintext* plaintext, Key* key) {
     //Begin the encryption rounds
     for (int round = 1; round < Nr; round++) {
         cipher->subBytes(state, s_box);
+        cipher->shiftRows(state);
     }
 }
 
