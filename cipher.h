@@ -3,13 +3,15 @@
 
 
 #include "state.h"
+#include "s_box.h"
 
 class Cipher {
 public:
-    void subBytes();
+    void addRoundKey(State* state, uint8_t key_schedule[44][4], int start, int end);
+    void subBytes(State* state, SBox* s_box);
     void shiftRows();
     void mixColumns();
-    void addRoundKey(State* state, uint8_t key_schedule[44][4], int start, int end);
+
 };
 
 
