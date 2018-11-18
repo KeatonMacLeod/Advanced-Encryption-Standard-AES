@@ -2,12 +2,14 @@
 #define CRYPTOGRAPHYSCRIPTS_CIPHER_H
 
 
+#include "state.h"
+
 class Cipher {
 public:
     void subBytes();
     void shiftRows();
     void mixColumns();
-    void addRoundKey();
+    void addRoundKey(State* state, uint8_t key_schedule[44][4], int start, int end);
 };
 
 

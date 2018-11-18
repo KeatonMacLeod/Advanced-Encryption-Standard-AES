@@ -16,12 +16,21 @@ AES::AES() {
     s_box_inverse->initializeSBox();
 }
 
+//Figure 5 in Section 5.1
 void AES::encrypt(Plaintext* plaintext, Key* key) {
-
     //Read the plaintext into the State array
     state->readPlaintextIntoState(plaintext);
 
+    //Stored in AES' key_schedule variable
     generateKeySchedule(key);
+
+    //Initial AddRoundKey
+    cipher->addRoundKey(state, key_schedule, 0, Nb-1);
+
+    //Begin the encryption rounds
+    for (int round = 1; round < Nr; round++) {
+
+    }
 }
 
 //CONFIRMED WORKING PROPERLY
@@ -49,11 +58,16 @@ void AES::generateKeySchedule(Key *key) {
     Rcon[3] = 0x00;
 
     for (int i = Nk; i < (Nb * (Nr + 1)); i++) {
+
+        // Copy key_schedule[i-1] to a temporary array so we can make modifications without
+        // changing the original data
         uint8_t temp_array[4];
         uint8_t* temp_ptr;
         copy(begin(key_schedule[i-1]), end(key_schedule[i-1]), begin(temp_array));
 
         if (i % Nk == 0) {
+
+            //Perform the RotWord() and SubWord() functions
             temp_ptr = subWord(rotWord(temp_array));
 
             // Perform XOR with round constant array
@@ -66,6 +80,7 @@ void AES::generateKeySchedule(Key *key) {
             Rcon[0] = galois_multipled_byte;
         }
 
+        //Set the respective key based off the computations above
         key_schedule[i][0] = key_schedule[i-Nk][0] ^ temp_ptr[0];
         key_schedule[i][1] = key_schedule[i-Nk][1] ^ temp_ptr[1];
         key_schedule[i][2] = key_schedule[i-Nk][2] ^ temp_ptr[2];
