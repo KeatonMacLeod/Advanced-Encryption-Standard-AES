@@ -9,6 +9,7 @@
 #include "state.h"
 #include "s_box_inverse.h"
 #include "s_box.h"
+#include "display.h"
 
 class AES {
 public:
@@ -16,6 +17,7 @@ public:
     static const int Nr = 10;
     static const int Nk = 4;
     Utility* utility;
+    Display* display;
     State* state;
     Cipher* cipher;
     CipherInverse* cipher_inverse;
@@ -29,14 +31,6 @@ public:
     void generateKeySchedule(Key* key);
     uint8_t* subWord(uint8_t word[4]);
     uint8_t* rotWord(uint8_t word[4]);
-
-    // Display functions
-    void displayKeySchedule();
-    void displayEncryptionProcess();
-    void displayPlaintext(Plaintext* plaintext);
-    void displayEncryptionRound(int round);
-    void displayDecryptionProcess();
-    void displayDecryptionRound(int round);
 };
 
 

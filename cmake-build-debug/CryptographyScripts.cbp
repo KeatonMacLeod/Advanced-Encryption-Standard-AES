@@ -100,6 +100,12 @@
 		<Unit filename="C:/Users/Jeeves/C++Projects/CryptographyScripts/cipher_inverse.h">
 			<Option target="CryptographyScripts"/>
 		</Unit>
+		<Unit filename="C:/Users/Jeeves/C++Projects/CryptographyScripts/display.cpp">
+			<Option target="CryptographyScripts"/>
+		</Unit>
+		<Unit filename="C:/Users/Jeeves/C++Projects/CryptographyScripts/display.h">
+			<Option target="CryptographyScripts"/>
+		</Unit>
 		<Unit filename="C:/Users/Jeeves/C++Projects/CryptographyScripts/key.cpp">
 			<Option target="CryptographyScripts"/>
 		</Unit>

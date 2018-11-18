@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CryptographyScripts.dir/cipher.cpp.obj"
   "CMakeFiles/CryptographyScripts.dir/cipher_inverse.cpp.obj"
   "CMakeFiles/CryptographyScripts.dir/state.cpp.obj"
+  "CMakeFiles/CryptographyScripts.dir/display.cpp.obj"
   "CryptographyScripts.pdb"
   "CryptographyScripts.exe"
   "CryptographyScripts.exe.manifest"
