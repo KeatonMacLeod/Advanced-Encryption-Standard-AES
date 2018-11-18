@@ -49,8 +49,12 @@ void AES::decrypt() {
         cipher_inverse->invShiftRows(state);
         cipher_inverse->invSubBytes(state, s_box_inverse);
         cipher_inverse->addRoundKey(state, key_schedule, round*Nb);
-        int x = 2+2;
+        cipher_inverse->invMixColumns(state);
     }
+
+    cipher_inverse->invShiftRows(state);
+    cipher_inverse->invSubBytes(state, s_box_inverse);
+    cipher_inverse->addRoundKey(state, key_schedule, 0);
 }
 
 //CONFIRMED WORKING PROPERLY

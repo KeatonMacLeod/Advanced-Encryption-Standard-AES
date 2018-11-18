@@ -42,6 +42,19 @@ void CipherInverse::invSubBytes(State* state, SBoxInverse* s_box_inverse) {
     }
 }
 
-void CipherInverse::invMixColumns() {
+void CipherInverse::invMixColumns(State* state) {
+    uint8_t temp[4][4];
 
+    for (int i=0; i<4; i++) {
+        temp[0][i] = utility->galoisMultiply(state->state[0][i], 0x0e) ^ utility->galoisMultiply(state->state[1][i], 0x0b) ^ utility->galoisMultiply(state->state[2][i], 0x0d) ^ utility->galoisMultiply(state->state[3][i], 0x09);
+        temp[1][i] = utility->galoisMultiply(state->state[0][i], 0x09) ^ utility->galoisMultiply(state->state[1][i], 0x0e) ^ utility->galoisMultiply(state->state[2][i], 0x0b) ^ utility->galoisMultiply(state->state[3][i], 0x0d);
+        temp[2][i] = utility->galoisMultiply(state->state[0][i], 0x0d) ^ utility->galoisMultiply(state->state[1][i], 0x09) ^ utility->galoisMultiply(state->state[2][i], 0x0e) ^ utility->galoisMultiply(state->state[3][i], 0x0b);
+        temp[3][i] = utility->galoisMultiply(state->state[0][i], 0x0b) ^ utility->galoisMultiply(state->state[1][i], 0x0d) ^ utility->galoisMultiply(state->state[2][i], 0x09) ^ utility->galoisMultiply(state->state[3][i], 0x0e);
+    }
+
+    for (int i=0; i<4; i++) {
+        for (int j=0; j<4; j++) {
+            state->state[i][j] = temp[i][j];
+        }
+    }
 }
