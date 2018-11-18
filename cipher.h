@@ -7,10 +7,12 @@
 
 class Cipher {
 public:
-    void addRoundKey(State* state, uint8_t key_schedule[44][4], int start, int end);
+    Utility* utility;
+    Cipher();
+    void addRoundKey(State* state, uint8_t key_schedule[44][4], int key_schedule_offset);
     void subBytes(State* state, SBox* s_box);
     void shiftRows(State* state);
-    void mixColumns();
+    void mixColumns(State* state);
 
 };
 

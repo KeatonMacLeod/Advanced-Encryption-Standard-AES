@@ -38,13 +38,23 @@ uint8_t Utility::hexStringToByte(const string& hexa)
     return byte;
 }
 
-// Computes byte * 2 and performs necessary modulo calculations if
-// an overflow took place
-uint8_t Utility::galoisMultiply(uint8_t byte) {
-    uint8_t hi_bit = byte >> 7;
-    byte = byte << 1;
-    if (hi_bit == 1) {
-        byte ^= 0x11b;
+// Computes byte_one * byte_two and performs necessary modulo calculations if
+// an overflow took place according to Galois Field finite field mathematics
+uint8_t Utility::galoisMultiply(uint8_t byte_one, uint8_t byte_two) {
+    uint8_t result = 0;
+
+    for (int i = 0; i < 8; i++) {
+        if ((byte_two & 1) != 0) {
+            result ^= byte_one;
+        }
+
+        bool highest_bit = (byte_one & 0x80) != 0;
+        byte_one <<= 1;
+        if (highest_bit) {
+            byte_one ^= 0x1B;
+        }
+        byte_two >>= 1;
     }
-    return byte;
+
+    return result;
 }

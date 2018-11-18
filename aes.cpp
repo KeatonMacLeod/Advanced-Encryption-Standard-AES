@@ -25,13 +25,19 @@ void AES::encrypt(Plaintext* plaintext, Key* key) {
     generateKeySchedule(key);
 
     //Initial AddRoundKey
-    cipher->addRoundKey(state, key_schedule, 0, Nb-1);
+    cipher->addRoundKey(state, key_schedule, 0);
 
     //Begin the encryption rounds
     for (int round = 1; round < Nr; round++) {
         cipher->subBytes(state, s_box);
         cipher->shiftRows(state);
+        cipher->mixColumns(state);
+        cipher->addRoundKey(state, key_schedule, round*Nb);
     }
+
+    cipher->subBytes(state, s_box);
+    cipher->shiftRows(state);
+    cipher->addRoundKey(state, key_schedule, 40);
 }
 
 //CONFIRMED WORKING PROPERLY
@@ -77,7 +83,7 @@ void AES::generateKeySchedule(Key *key) {
             }
 
             // Perform Galois multiplication to increment round constant array
-            uint8_t galois_multipled_byte = utility->galoisMultiply(Rcon[0]);
+            uint8_t galois_multipled_byte = utility->galoisMultiply(Rcon[0], 0x02);
             Rcon[0] = galois_multipled_byte;
         }
 
